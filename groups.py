@@ -22,8 +22,7 @@ with urlopen(url) as response:
 # convert the returned JSON string to a Python data-type
 data = json.loads(resp.decode('utf-8'))
 
-out = data[params]
-out = out['data']
+out = data[params]['data']
 
 # list of books name, id, time-created
 name = []
